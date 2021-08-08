@@ -68,7 +68,7 @@ vector<int> mergeSort(vector<int> arr)
     // {
     //     cout << larr[k] << " ";
     // }
-    cout << endl;
+    // cout << endl;
     copy(arr.begin() + (arr.size() / 2), arr.end(), back_inserter(rightarr));
     vector<int> rarr = mergeSort(rightarr);
     // cout << "returned right" << endl;
