@@ -60,6 +60,8 @@ void swaap(int &a, int &b)
 
 void heapify(vector<int> &arr, int n)
 {
+    /*this does not build a max heap, but just brigns the largest to the top*/
+
     for (int i = n / 2; i >= 0; i--)
     {
         int parent = i;
@@ -90,13 +92,8 @@ int main()
 {
     fast_cin();
     vector<int> arr = {56, 5, 3, 6, 23, 45, 67, 1, 34, 100, 2, 5};
-    heapSort(arr, arr.size());
-    // for (auto elem : arr)
-    // {
-    //     cout << elem << " ";
-    // }
-    // // heapify(arr, arr.size());
-    // cout << endl;
+    heapSort(arr, arr.size()); /*O(n^2) time*/
+
     for (auto elem : arr)
     {
         cout << elem << " ";
